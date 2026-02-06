@@ -27,8 +27,9 @@ jobs:
 
       - name: Build da imagem Docker (backend)
         run: |
-          cd backend
-          docker build -t igreja-backend:dev .
+          docker build \
+            -t $ECR_REGISTRY/igreja-backend:dev \
+            ./backend
 
       - name: Tag da imagem para o ECR
         run: |
