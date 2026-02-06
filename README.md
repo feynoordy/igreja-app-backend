@@ -13,3 +13,4 @@ API responsável por:
 ## Governança
 - Deploy via GitOps
 - Imagens Docker versionadas
+# trigger ci
